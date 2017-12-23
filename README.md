@@ -12,17 +12,14 @@ Parameter.js gives you a global object `Parameter`, and it's helper functions, i
 
 ## Manual ; Not on Load
 ```javascript
-function fooBar(allowedVariablesArray, delimeter) {
-    Parameter.updateVariables(["time", "height", "width"], "?");
-    return Parameter.variables;
-}
+Parameter.updateVariables(["time", "height", "width"], "?");
 //Will update {Parameter.variables}
 ```
 
 ## Automatic ;  On Load
 ```javascript
 Parameter.updateVariablesOnLoad(["time", "height", "width"], "?");
-//Will update {Parameter.variables}
+//Will update {Parameter.variables} on page load
 ```
 
 ## Helpers 
