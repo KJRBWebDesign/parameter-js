@@ -21,7 +21,7 @@ function fooBar(allowedVariablesArray, delimeter) {
 
 ## Automatic ;  On Load
 ```javascript
-Parameter.updateVariablesOnLoad(["hello"], "?");
+Parameter.updateVariablesOnLoad(["time", "height", "width"], "?");
 //Will update {Parameter.variables}
 ```
 
