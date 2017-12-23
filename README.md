@@ -2,18 +2,13 @@
 
 # Usage
 
-*Update an Object's properties via URL parameters in Javascript*
+*Update an Object's(Parameter.variables{}) properties via URL parameters in Javascript*
 
 **Although you may use a custom delimeter, "*?*" is recommended**
 
-parameter.js gives you a global object, `Parameter`, and it's helper functions, including `Parameter.updateVariablesOnLoad(allowedVariablesArray, delimeter)` which is a one-off function to update variables on page load
+parameter.js gives you a global object, `Parameter`, and it's helper functions, including `Parameter.updateVariablesOnLoad(allowedVariablesArray, delimeter)` which is a one-off function to update `Parameter.variables` on page load
 
 **Example URL: *mysite.com/portfolio/videos?time=3m50s***
-
-```javascript
-
-
-```
 
 ## Manual ; Not on Load
 ```javascript
