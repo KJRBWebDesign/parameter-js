@@ -19,10 +19,10 @@ var Parameter = {
         Parameter.allowedVariables.indexOf(prop) !== -1 ? Parameter.variables[prop] = value : console.log("variable _" +  prop + "_ is not an allowed variable")/* IMPORTANT */; 
     });
   },
-  updateVariablesOnLoad: function(allowed, delimeter) {
+  updateVariablesOnLoad: function(allowedArray, delimeter) {
     Parameter.onLoad(function(){
       Parameter.parseURL(delimeter);
-      Parameter.updateVariables(allowed);
+      Parameter.updateVariables(allowedArray);
       return Parameter.variables;
     });
   }
