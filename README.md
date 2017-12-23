@@ -37,3 +37,5 @@ Parameter.updateVariablesOnLoad(["hello"], "?");
           .allowedVariables[] //array with object property names that are allowed to be changed
           .variables{} //object used to contain updated variables ;; Parameter.variables[propName] = passedValue;  
 ```
+
+*Note: this probably is not secure in any way, lol* 
