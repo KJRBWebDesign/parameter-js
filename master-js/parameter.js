@@ -15,7 +15,9 @@ var Parameter = {
       Parameter.parseURL(delimeter) /* Parse URL */
       vars.forEach(function(item){
         let itemSplit = Parameter.variables.array[item].split("=");
-        Parameter.allowedVariables.indexOf(itemSplit[0]) !== -1 ? Parameter.variables[itemSplit[0]] = itemSplit[1] : console.log("variable _" +  itemSplit[0] + "_ is not an allowed variable")/* IMPORTANT */; 
+            prop = itemSplit[0],
+            value = itemSplit[1];
+        Parameter.allowedVariables.indexOf(prop) !== -1 ? Parameter.variables[prop] = value : console.log("variable _" +  prop + "_ is not an allowed variable")/* IMPORTANT */; 
     });
   },
   updateVariablesOnLoad: function(allowedArray, delimeter) {
@@ -25,3 +27,4 @@ var Parameter = {
     });
   }
 }
+Parameter.updateVariablesOnLoad(["hello"], "?");
