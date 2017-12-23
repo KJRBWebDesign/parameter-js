@@ -9,9 +9,10 @@ var Parameter = {
       Parameter.variables.array = varArray;
       return Parameter.variables.array;
   },
-  updateVariables: function(allowed) {
+  updateVariables: function(allowed,delimeter) {
       Parameter.allowedVariables = allowed;
       let vars = Object.keys(Parameter.variables.array);
+      Parameter.parseURL(delimeter) /* Parse URL */
       vars.forEach(function(item){
         let itemSplit = Parameter.variables.array[item].split("=");
             prop = itemSplit[0],
@@ -21,10 +22,9 @@ var Parameter = {
   },
   updateVariablesOnLoad: function(allowedArray, delimeter) {
     Parameter.onLoad(function(){
-      Parameter.parseURL(delimeter);
       Parameter.updateVariables(allowedArray);
       return Parameter.variables;
     });
   }
 }
-Parameter.updateVariablesOnLoad(["hello"], "?");
+//Parameter.updateVariablesOnLoad(["hello"], "?"); /* TEST */
