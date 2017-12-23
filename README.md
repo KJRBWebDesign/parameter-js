@@ -16,9 +16,8 @@ function fooBar(allowedVariablesArray, delimeter) {
     Parameter.parseURL(delimeter);
     Parameter.updateVariables(allowedVariablesArray);
     return Parameter.variables;
-    
-    //Will update {Parameter.variables}
 }
+//Will update {Parameter.variables}
 ```
 
 ## Automatic ;  On Load
