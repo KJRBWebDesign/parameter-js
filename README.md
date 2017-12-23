@@ -10,13 +10,13 @@ Parameter.js gives you a global object `Parameter`, and it's helper functions, i
 
 **Example URL: *mysite.com/portfolio/videos?time=3m50s***
 
-## Manual ; Not on Load
+##  Not On Load
 ```javascript
 Parameter.updateVariables(["time", "height", "width"], "?");
 //Will update {Parameter.variables}
 ```
 
-## Automatic ;  On Load
+## On Load
 ```javascript
 Parameter.updateVariablesOnLoad(["time", "height", "width"], "?");
 //Will update {Parameter.variables} on page load
