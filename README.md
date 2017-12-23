@@ -20,9 +20,9 @@ parameter.js gives you a global object, `Parameter`, and it's helper functions, 
 function fooBar(allowedVariablesArray, delimeter) {
     Parameter.parseURL(delimeter);
     Parameter.updateVariables(allowedVariablesArray);
-    return Parameter.vars;
+    return Parameter.variables;
     
-    //Will update {Parameter.variabless}
+    //Will update {Parameter.variables}
 }
 ```
 
