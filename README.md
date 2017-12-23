@@ -33,7 +33,7 @@ Parameter.updateVariablesOnLoad(["hello"], "?");
 
  Parameter.onload(callback); //Shorthand for window.onload = foo();
           .parseURL(delimeter); // Parse the current URL with a custom delimeter
-          .updateVariables(allowedArray); //Looks at Parameter.vars and updates the variable if the variable is in allowedArray
+          .updateVariables(allowedArray); //Looks at Parameter.variables and updates the variable if the variable is in allowedArray
           .updateVariableOnLoad(allowedArray, delimeter); //Parses the current URL on page load and updates allowed variables
           .allowedVariables[] //array with object property names that are allowed to be changed
           .variables{} //object used to contain updated variables ;; Parameter.variables[propName] = passedValue;  
