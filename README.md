@@ -38,4 +38,4 @@ Parameter.updateVariablesOnLoad(["hello"], "?");
           .variables{} //object used to contain updated variables ;; Parameter.variables[propName] = passedValue;  
 ```
 
-*Note: this probably is not secure in any way, lol* 
+*Note: this probably isn't secure in any way, lol* 
