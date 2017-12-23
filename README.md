@@ -1,4 +1,4 @@
-# parameter-js
+# Parameter.js
 
 # Usage
 
@@ -6,13 +6,17 @@
 
 **Although you may use a custom delimeter, "*?*" is recommended**
 
+parameter.js gives you a global object, `Parameter`, which has a list of helper functions, including `Parameter.updateVariablesOnLoad(allowedVariablesArray, delimeter)` 
+```javascript
+
+
+```
 
 ## Manual
 ```javascript
-var x = function(allowed, delimeter) {
-  Parameter.onLoad(function(){
+function fooBar(allowedVariablesArray, delimeter) {
     Parameter.parseURL(delimeter);
-    Parameter.updateVariables(allowed);
+    Parameter.updateVariables(allowedVariablesArray);
     return Parameter.vars;
 }
 ```
