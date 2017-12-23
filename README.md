@@ -6,7 +6,7 @@
 
 **Although you may use a custom delimeter, "*?*" is recommended**
 
-parameter.js gives you a global object, `Parameter`, and it's helper functions, including `Parameter.updateVariablesOnLoad(allowedVariablesArray, delimeter)` which is a one-off function to update `Parameter.variables` on page load
+parameter.js gives you a global object `Parameter`, and it's helper functions, including `Parameter.updateVariablesOnLoad(allowedVariablesArray, delimeter)`, a one-off function to update `Parameter.variables` on page load
 
 **Example URL: *mysite.com/portfolio/videos?time=3m50s***
 
