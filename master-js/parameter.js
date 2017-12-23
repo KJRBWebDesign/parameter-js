@@ -16,7 +16,6 @@ var Parameter = {
         let itemSplit = Parameter.variables.array[item].split("=");
             prop = itemSplit[0],
             value = itemSplit[1];
-
         Parameter.allowedVariables.indexOf(prop) !== -1 ? Parameter.variables[prop] = value : console.log("variable _" +  prop + "_ is not an allowed variable")/* IMPORTANT */; 
     });
   },
@@ -28,5 +27,4 @@ var Parameter = {
     });
   }
 }
-
 Parameter.updateVariablesOnLoad(["hello"], "?");
