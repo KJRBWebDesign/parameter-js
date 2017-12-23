@@ -22,7 +22,7 @@ var Parameter = {
   },
   updateVariablesOnLoad: function(allowedArray, delimeter) {
     Parameter.onLoad(function(){
-      Parameter.updateVariables(allowedArray);
+      Parameter.updateVariables(allowedArray, delimeter);
       return Parameter.variables;
     });
   }
