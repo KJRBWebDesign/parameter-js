@@ -2,7 +2,7 @@
 
 # Usage
 
-*Update a global Javascript object on page load with URL parameters using a custom delimeter*
+*Update an Object's properties via URL parameters in Javascript*
 
 **Although you may use a custom delimeter, "*?*" is recommended**
 
